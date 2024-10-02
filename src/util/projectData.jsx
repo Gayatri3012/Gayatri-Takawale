@@ -26,8 +26,8 @@ const PROJECT_DATA =  [
         title : 'NoteMaker',
         description : 'NoteMaker makes note-taking a breeze! Write down your ideas clearly with formatting options and keep them organized for easy access. Plus, a secure login ensures your notes stay private - only you can see them!',
         image: '/images/project2.png',
-        demoLink: 'https://notemaker-ocsl.onrender.com',
-        code: 'https://github.com/Gayatri3012/NoteMaker',
+        demoLink: 'https://note-making-app-jh5f.onrender.com',
+        code: 'https://github.com/Gayatri3012/Note-making-app/',
         techStack: [  'NodeJS','MongoDB', 'HTML', 'CSS', 'JavaScript','TailwindCSS']
     },
     
