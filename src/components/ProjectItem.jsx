@@ -28,7 +28,7 @@ export default function ProjectItem({project, index}) {
           {/* <img src={project.image} alt={project.title} className="screen-lg:w-[1064px] screen-lg:h-[768px] screen-md: w-2/3 screen-md:h-1/3 rounded-lg"/> */}
             
             <div className="flex gap-4 min-h-20 max-w-[700px] justify-between items-center">
-                <p className="p-4 max-w-[1/3] font-semibold text-xl">{project.description} <br />
+                <p className="p-4 max-w-[1/3] font-semibold lg:text-xl sm:text-l md:text-l">{project.description} <br />
                 <a href={project.code} target="_blank" className="text-blue-600 flex gap-1 m-1 hover:underline">
                     View Code <CgArrowTopRightR className="h-6 w-6 " />
                 </a> 
