@@ -8,7 +8,7 @@ const PROJECT_DATA =  [
         logo: <FaShoppingBag   className="w-9 h-9 m-3" />,
         title : 'E-commerce website',
         description : 'E-commerce website built with React.js and Next.js . Enables users to browse products, add items to their cart, and manage their account.',
-        image: '/images/project3.png',
+        image: '/images/ecommerce.png',
         demoLink: 'https://e-commerce-mocha-nine-21.vercel.app/',
         code: 'https://github.com/Gayatri3012/e-commerce',
         techStack: ['React.js', 'Next.js']
