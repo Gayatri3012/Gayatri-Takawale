@@ -7,7 +7,7 @@ export default function ChangingText() {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % textArray.length);
-        }, 2000); 
+        }, 3000); 
 
         return () => clearInterval(intervalId);
     }, [textArray.length]);

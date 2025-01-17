@@ -15,7 +15,7 @@ export default function ProjectItem({project, index}) {
             <div className="flex flex-col justify-center items-center">
                 {/* <img className="w-8 h-8 m-3" src={project.logo} alt="project-logo"/> */}
                 {project.logo}
-                <h2>{project.title}</h2>
+                <p className="text-4xl font-bold">{project.title}</p>
             </div>
 
             <a href={project.demoLink} target="_blank" className="dark:bg-[#3b437b] bg-[#424346] text-white rounded-md p-1 px-2 font-medium">VIEW MORE</a>

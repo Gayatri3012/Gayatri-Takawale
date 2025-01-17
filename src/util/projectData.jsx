@@ -1,6 +1,7 @@
 import { ImQuotesRight } from "react-icons/im";
 import { PiNotePencilBold } from "react-icons/pi";
 import { FaShoppingBag } from "react-icons/fa";
+import { BsFileImageFill } from "react-icons/bs";
 
 
 const PROJECT_DATA =  [
@@ -14,23 +15,32 @@ const PROJECT_DATA =  [
         techStack: ['React.js', 'Next.js']
     },
     {
-        logo: <ImQuotesRight className="w-9 h-9  m-3" />,
-        title : 'Dunder Mifflin Daily Dose',
-        description : "Built a React quote generator for 'The Office' fans. Fetches quotes & displays them with character info.",
-        image: '/images/project1.png',
-        demoLink: 'https://dunder-mifflin-daily-dose.web.app/',
-        code: 'https://github.com/Gayatri3012/Dunder-Mifflin-Daily-Dose',
-        techStack: [ 'ReactJS', 'API', 'JavaScript', 'HTML', 'CSS']
-    },
-    {
         logo:  <PiNotePencilBold  className="w-9 h-9  m-3" />,
         title : 'NoteMaker',
         description : 'NoteMaker simplifies note-taking with clear formatting, organized storage, and secure login, making it easy to jot down and access your ideas anytime.',
         image: '/images/project2.png',
-        demoLink: 'https://note-making-app-jh5f.onrender.com',
+        demoLink: 'https://note-making-app-pq5e.onrender.com',
         code: 'https://github.com/Gayatri3012/Note-making-app/',
         techStack: [  'NodeJS','MongoDB', 'HTML', 'CSS', 'JavaScript','TailwindCSS']
     },
+    {
+        logo:  <BsFileImageFill   className="w-9 h-9  m-3"/>,
+        title : 'PixelArt',
+        description : 'PixelArt an app for editing images (brightness, contrast, rotation, cropping). Built with React Crop, Node.js, Express, Sharp.js, Context API, Axios, and React Toastify.',
+        image: '/images/project1.png',
+        demoLink: 'https://pixelart-image-processor.onrender.com',
+        code: 'https://github.com/Gayatri3012/PixelArt-Frontend/',
+        techStack: [  'NodeJS','ReactJS','Sharp.js', 'RestAPI']
+    },
+    // {
+    //     logo: <ImQuotesRight className="w-9 h-9  m-3" />,
+    //     title : 'Dunder Mifflin Daily Dose',
+    //     description : "Built a React quote generator for 'The Office' fans. Fetches quotes & displays them with character info.",
+    //     image: '/images/project1.png',
+    //     demoLink: 'https://dunder-mifflin-daily-dose.web.app/',
+    //     code: 'https://github.com/Gayatri3012/Dunder-Mifflin-Daily-Dose',
+    //     techStack: [ 'ReactJS', 'API', 'JavaScript', 'HTML', 'CSS']
+    // }
     
 ];
 
