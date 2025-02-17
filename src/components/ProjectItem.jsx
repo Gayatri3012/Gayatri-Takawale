@@ -15,10 +15,10 @@ export default function ProjectItem({project, index}) {
             <div className="flex flex-col justify-center items-center">
                 {/* <img className="w-8 h-8 m-3" src={project.logo} alt="project-logo"/> */}
                 {project.logo}
-                <p className="text-4xl font-bold">{project.title}</p>
+                <p className="text-4xl font-bold max-sm:text-xl">{project.title}</p>
             </div>
 
-            <a href={project.demoLink} target="_blank" className="dark:bg-[#3b437b] bg-[#424346] text-white rounded-md p-1 px-2 font-medium">VIEW MORE</a>
+            <a href={project.demoLink} target="_blank" className="dark:bg-[#3b437b] bg-[#424346] text-white rounded-md p-1 px-2 font-medium max-sm:text-xs">VIEW MORE</a>
             <a className="flex items-center justify-center" href={project.demoLink} target="_blank" >
                 <img 
                 src={project.image} 
@@ -28,15 +28,15 @@ export default function ProjectItem({project, index}) {
           {/* <img src={project.image} alt={project.title} className="screen-lg:w-[1064px] screen-lg:h-[768px] screen-md: w-2/3 screen-md:h-1/3 rounded-lg"/> */}
             
             <div className="flex gap-4 min-h-20 max-w-[700px] justify-between items-center">
-                <p className="p-4 max-w-[1/3] font-semibold lg:text-xl sm:text-l md:text-l">{project.description} <br />
-                <a href={project.code} target="_blank" className="text-blue-600 flex gap-1 m-1 hover:underline">
+                <p className="p-4 max-w-[1/3] font-semibold lg:text-xl sm:text-l md:text-l max-sm:text-sm">{project.description} <br />
+                <a href={project.code} target="_blank" className="text-blue-600 flex gap-1 m-1 lg:text-xl sm:text-l md:text-l hover:underline max-sm:text-sm">
                     View Code <CgArrowTopRightR className="h-6 w-6 " />
                 </a> 
                 </p>
                 
                 {/* <ul className="grid p-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-9"> */}
                 <ul className="flex gap-3 flex-wrap col-span-2 p-2">
-                    {project.techStack.map((skill, index) => <li key={index}><button className="dark:bg-[#3b437b] bg-[#424346] text-white rounded-xl p-1 px-2 font-semibold">{skill}</button></li>)}
+                    {project.techStack.map((skill, index) => <li key={index}><button className="dark:bg-[#3b437b] bg-[#424346]  max-sm:text-sm text-white rounded-xl p-1 px-2 font-semibold">{skill}</button></li>)}
                 </ul>
             </div>
             

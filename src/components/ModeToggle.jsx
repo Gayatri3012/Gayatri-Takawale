@@ -12,6 +12,6 @@ export default function ModeToggleButton() {
     }
     
     return (
-        <button id="themeButton" className=" w-12 h-12" onClick={toggleTheme}>{darkMode ? <img src="/images/sun.png"/> : <img src="/images/moon4.png"/>}</button>
+        <button id="themeButton" className=" w-12 h-12 max-sm:w-10 max-sm:h-10" onClick={toggleTheme}>{darkMode ? <img src="/images/sun.png"/> : <img src="/images/moon4.png"/>}</button>
     )
 }

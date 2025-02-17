@@ -2,6 +2,8 @@ import { ImQuotesRight } from "react-icons/im";
 import { PiNotePencilBold } from "react-icons/pi";
 import { FaShoppingBag } from "react-icons/fa";
 import { BsFileImageFill } from "react-icons/bs";
+import { RiAdminLine } from "react-icons/ri";
+import { BsUiChecksGrid } from "react-icons/bs";
 
 
 const PROJECT_DATA =  [
@@ -31,6 +33,24 @@ const PROJECT_DATA =  [
         demoLink: 'https://pixelart-image-processor.onrender.com',
         code: 'https://github.com/Gayatri3012/PixelArt-Frontend/',
         techStack: [  'NodeJS','ReactJS','Sharp.js', 'RestAPI']
+    },
+    {
+        logo:  <BsUiChecksGrid    className="w-9 h-9  m-3"/>,
+        title : 'Game of Life',
+        description : 'A 30x30 grid implementation of Conway’s Game of Life with start, stop, clear, and random pattern generation buttons to visualize cellular automation.',
+        image: '/images/project5.png',
+        demoLink: 'https://game-of-life-ten-lime.vercel.app/',
+        code: 'https://github.com/Gayatri3012/Game-of-life',
+        techStack: [ 'ReactJS', 'JavaScript','HTML', 'CSS']
+    },
+    {
+        logo:  <RiAdminLine    className="w-9 h-9  m-3"/>,
+        title : 'Role Based Access Control',
+        description : 'RBAC System for managing roles and permissions, built with React and json-server as a mock API. Users can create and manage roles and permissions, demonstrating an understanding of role management and access control.l',
+        image: '/images/project6.png',
+        demoLink: 'https://role-based-access-control-project.vercel.app/',
+        code: 'https://github.com/Gayatri3012/Role-Based-Access-Control-Project/',
+        techStack: [ 'ReactJS', 'JavaScript','HTML', 'CSS']
     },
     // {
     //     logo: <ImQuotesRight className="w-9 h-9  m-3" />,
