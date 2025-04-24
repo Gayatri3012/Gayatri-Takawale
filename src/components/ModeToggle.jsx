@@ -1,6 +1,6 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { DarkModeContext } from "../context/DarkModeContext";
-
+import { Sun, Moon } from "lucide-react";
 
 export default function ModeToggleButton() {
 
@@ -12,6 +12,6 @@ export default function ModeToggleButton() {
     }
     
     return (
-        <button id="themeButton" className=" w-12 h-12 max-sm:w-10 max-sm:h-10" onClick={toggleTheme}>{darkMode ? <img src="/images/sun.png"/> : <img src="/images/moon4.png"/>}</button>
+        <button id="themeButton" className="p-3 rounded-full hover:bg-[#3c83f55c] dark:hover:bg-[#1c2c6a80] duration-200 ease-in"  onClick={toggleTheme}>{darkMode ?  <Sun size={20} className="text-yellow-300"/> :  <Moon size={20} className="text-gray-600"/>}</button>
     )
 }

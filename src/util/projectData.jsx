@@ -1,32 +1,22 @@
-import { ImQuotesRight } from "react-icons/im";
-import { PiNotePencilBold } from "react-icons/pi";
-import { FaShoppingBag } from "react-icons/fa";
-import { BsFileImageFill } from "react-icons/bs";
-import { RiAdminLine } from "react-icons/ri";
-import { BsUiChecksGrid } from "react-icons/bs";
-
 
 const PROJECT_DATA =  [
+
     {
-        logo: <FaShoppingBag   className="w-9 h-9 m-3" />,
-        title : 'E-commerce website',
-        description : 'E-commerce website built with React.js and Next.js . Enables users to browse products, add items to their cart, and manage their account.',
-        image: '/images/ecommerce.png',
-        demoLink: 'https://e-commerce-mocha-nine-21.vercel.app/',
-        code: 'https://github.com/Gayatri3012/e-commerce',
-        techStack: ['React.js', 'Next.js']
+        title : 'EmailFlow: Visual Email Builder',
+        description : 'EmailFlow is a tool for building and scheduling automated email sequences with a visual flowchart. Users can add and connect nodes like Lead Source, Cold Email, and Delay, with JWT and Google OAuth authentication. It features protected routes, real-time feedback, and a responsive UI.',
+        image: '/images/project4.png',
+        demoLink: 'https://email-flow-front-end.vercel.app/',
+        code: 'https://github.com/Gayatri3012/EmailFlow-FrontEnd.git',
+        techStack: [ 'ReactJS', 'Redux', 'Node.js',  'OAuth', 'React Flow', 'MongoDB', 'Agenda.js',' Nodemailer']
     },
     {
-        logo:  <PiNotePencilBold  className="w-9 h-9  m-3" />,
-        title : 'NoteMaker',
-        description : 'NoteMaker simplifies note-taking with clear formatting, organized storage, and secure login, making it easy to jot down and access your ideas anytime.',
+        title : 'School Website',
+        description : 'Freelance project — designed and built a fully responsive website for K. P. Jadhav High School & Junior College. Created a clean UI/UX with dedicated sections and an interactive gallery. Achieved 100 SEO and 90+ performance scores on Google PageSpeed.',
         image: '/images/project2.png',
-        demoLink: 'https://note-making-app-pq5e.onrender.com',
-        code: 'https://github.com/Gayatri3012/Note-making-app/',
-        techStack: [  'NodeJS','MongoDB', 'HTML', 'CSS', 'JavaScript','TailwindCSS']
+        demoLink: 'https://www.kpjadhavjrcollege.in/',
+        techStack: [  'React.js', 'HTML', 'CSS', 'JavaScript']
     },
     {
-        logo:  <BsFileImageFill   className="w-9 h-9  m-3"/>,
         title : 'PixelArt',
         description : 'PixelArt an app for editing images (brightness, contrast, rotation, cropping). Built with React Crop, Node.js, Express, Sharp.js, Context API, Axios, and React Toastify.',
         image: '/images/project1.png',
@@ -35,7 +25,15 @@ const PROJECT_DATA =  [
         techStack: [  'NodeJS','ReactJS','Sharp.js', 'RestAPI']
     },
     {
-        logo:  <BsUiChecksGrid    className="w-9 h-9  m-3"/>,
+        title : 'E-commerce website',
+        description : 'E-commerce website built with React.js and Next.js . Enables users to browse products, add items to their cart, and manage their account.',
+        image: '/images/ecommerce.png',
+        demoLink: 'https://e-commerce-mocha-nine-21.vercel.app/',
+        code: 'https://github.com/Gayatri3012/e-commerce',
+        techStack: ['React.js', 'Next.js']
+    },
+
+    {
         title : 'Game of Life',
         description : 'A 30x30 grid implementation of Conway’s Game of Life with start, stop, clear, and random pattern generation buttons to visualize cellular automation.',
         image: '/images/project5.png',
@@ -44,23 +42,13 @@ const PROJECT_DATA =  [
         techStack: [ 'ReactJS', 'JavaScript','HTML', 'CSS']
     },
     {
-        logo:  <RiAdminLine    className="w-9 h-9  m-3"/>,
         title : 'Role Based Access Control',
         description : 'RBAC System for managing roles and permissions, built with React and json-server as a mock API. Users can create and manage roles and permissions, demonstrating an understanding of role management and access control.l',
         image: '/images/project6.png',
         demoLink: 'https://role-based-access-control-project.vercel.app/',
         code: 'https://github.com/Gayatri3012/Role-Based-Access-Control-Project/',
         techStack: [ 'ReactJS', 'JavaScript','HTML', 'CSS']
-    },
-    // {
-    //     logo: <ImQuotesRight className="w-9 h-9  m-3" />,
-    //     title : 'Dunder Mifflin Daily Dose',
-    //     description : "Built a React quote generator for 'The Office' fans. Fetches quotes & displays them with character info.",
-    //     image: '/images/project1.png',
-    //     demoLink: 'https://dunder-mifflin-daily-dose.web.app/',
-    //     code: 'https://github.com/Gayatri3012/Dunder-Mifflin-Daily-Dose',
-    //     techStack: [ 'ReactJS', 'API', 'JavaScript', 'HTML', 'CSS']
-    // }
+    }
     
 ];
 

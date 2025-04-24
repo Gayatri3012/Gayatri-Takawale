@@ -2,31 +2,34 @@ const SKILLS = [
     {
         type: 'Languages',
         items:[
-            'C', 'C++'
-        ],
-        icons: ['/c.png', '/cpp.png']
+            {skill: 'C', icon: '/c.png'},
+            {skill: 'C++', icon: '/cpp.png'},
+        ]
     },
     {
         type: 'Frontend',
         items:[
-            'HTML', 'CSS', 'JavaScript', 'ReactJS', 'Tailwind CSS'
-        ],
-        icons: ['/html.png', '/css.png', '/javascript.png', '/react.png', '/tailwindcss.png']
+            {skill: 'HTML', icon: '/html.png'},
+            {skill: 'CSS', icon: '/css.png'},
+            {skill: 'JavaScript', icon: '/javascript.png'},
+            {skill: 'ReactJS', icon:  '/react.png'},
+            {skill: 'Tailwind CSS', icon: '/tailwindcss.png'},
+        ]
     },
     {
         type: 'Backend',
         items:[
-            'Node.js', 'Express.js', 'MongoDB',
-        ],
-        // icons: ['/nodejsdark.svg', '/expressjs.png', '/mongoDB.png']
-        icons: ['/nodeicon.png', '/expressjs.png', '/mongoDB.png']
+            {skill: 'Node.js', icon: '/nodeicon.png'},
+            {skill: 'Express.js', icon: '/expressjs.png'},
+            {skill: 'MongoDB', icon: '/mongoDB.png'},
+        ]
     },
     {
         type: 'Development Tools',
         items:[
-            'GIT', 'Visual Studio Code'
-        ],
-        icons: ['/git.png', '/VSCode.png']
+            {skill: 'GIT', icon: '/git.png'},
+            {skill: 'Visual Studio Code', icon: '/VSCode.png'},
+        ]
     },
 ]
 

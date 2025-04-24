@@ -1,45 +1,46 @@
-import { CgArrowTopRightR } from "react-icons/cg";
+import { SquareArrowOutUpRight, Github } from "lucide-react";
+import { useContext } from "react";
+import { DarkModeContext } from "../context/DarkModeContext";
+
 
 
 export default function ProjectItem({project, index}) {
 
-    let classNameForOuterDiv;
-
-    if(index % 2 == 0) {
-        classNameForOuterDiv = "flex flex-col gap-4 justify-center items-center p-4";
-    } else {
-        classNameForOuterDiv = "flex flex-col gap-4 justify-center items-center p-4 dark:bg-index-blue bg-[#a7a9af]"
-    }
+         const {darkMode} = useContext(DarkModeContext);
+    
     return (
-        <div className={classNameForOuterDiv}> 
-            <div className="flex flex-col justify-center items-center">
-                {/* <img className="w-8 h-8 m-3" src={project.logo} alt="project-logo"/> */}
-                {project.logo}
-                <p className="text-4xl font-bold max-sm:text-xl">{project.title}</p>
-            </div>
-
-            <a href={project.demoLink} target="_blank" className="dark:bg-[#3b437b] bg-[#424346] text-white rounded-md p-1 px-2 font-medium max-sm:text-xs">VIEW MORE</a>
-            <a className="flex items-center justify-center" href={project.demoLink} target="_blank" >
+        
+        <div className='p-1 h-[100%] flex flex-col justify-start items-center   rounded-lg bg-[#a2caff3f] dark:bg-[#1d2635] overflow-hidden  hover:shadow-lg hover:shadow-[#3C83F5]/50 ease-in-out duration-200'> 
+            <div className={`w-full relative `} >
                 <img 
-                src={project.image} 
-                alt={project.title} 
-                className="hover:border-2 hover:border-solid hover:border-white screen-lg:w-[1024px] screen-lg:h-[768px] screen-md: w-2/3 screen-md:h-1/3 rounded-lg"/>
-            </a>
-          {/* <img src={project.image} alt={project.title} className="screen-lg:w-[1064px] screen-lg:h-[768px] screen-md: w-2/3 screen-md:h-1/3 rounded-lg"/> */}
-            
-            <div className="flex gap-4 min-h-20 max-w-[700px] justify-between items-center">
-                <p className="p-4 max-w-[1/3] font-semibold lg:text-xl sm:text-l md:text-l max-sm:text-sm">{project.description} <br />
-                <a href={project.code} target="_blank" className="text-blue-600 flex gap-1 m-1 lg:text-xl sm:text-l md:text-l hover:underline max-sm:text-sm">
-                    View Code <CgArrowTopRightR className="h-6 w-6 " />
-                </a> 
-                </p>
-                
-                {/* <ul className="grid p-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-9"> */}
-                <ul className="flex gap-3 flex-wrap col-span-2 p-2">
-                    {project.techStack.map((skill, index) => <li key={index}><button className="dark:bg-[#3b437b] bg-[#424346]  max-sm:text-sm text-white rounded-xl p-1 px-2 font-semibold">{skill}</button></li>)}
-                </ul>
+                className="z-10 inset-shadow-2xs rounded-lg"
+                    src={project.image} 
+                    alt={project.title} 
+                 />
+                 <div className="w-[100%] absolute bottom-0 left-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent backdrop-blur-sm">
+
+                    <ul className=" flex gap-2 flex-wrap p-2">
+                        {project.techStack.map((skill, index) => <li key={index}><button className="bg-[#376ebf]  text-[12px] text-white rounded-xl p-1 px-2 font-semibold">{skill}</button></li>)}
+                    </ul>
+                 </div>
+              
             </div>
+                
             
+            <div className="h-[100%] p-4 flex flex-col gap-2">
+                <h3 className="text-base font-medium ">{project.title}</h3>
+                <p className=" max-w-[1/3] font-normal max-sm:text-[14px]  text-[16px]">{project.description} <br /></p>
+                <div className="flex items-center">
+                    {project.code && <a href="https://github.com/Gayatri3012" target="_blank" className="text-blue-600 flex gap-1 m-1  hover:underline text-sm">
+                        <Github size={20} className='dark:text-[#5479ff] text-[#3a65fe]' /> 
+                    </a>}
+                    <a href={project.demoLink} target="_blank" className="text-blue-600 flex gap-1 m-1  hover:underline text-sm">
+                        <SquareArrowOutUpRight size={20} className='dark:text-[#5479ff] text-[#3a65fe]'/> 
+                    </a> 
+                </div>
+                
+                
+            </div>
         </div>
     )
 }
