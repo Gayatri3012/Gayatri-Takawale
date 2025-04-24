@@ -12,7 +12,7 @@ export default function HomePage() {
     const {darkMode} = useContext(DarkModeContext);
 
     return (
-        <section id="home" className="flex gap-2 max-sm:gap-0 scroll-smooth">
+        <section id="home" className="flex gap-2 -mt-10 max-sm:gap-0 scroll-smooth ">
             {/* <img src="/images/worldmap2.jpg" alt="" /> */}
             <p className="py-4  font-bold sm:text-5xl md:text-6xl lg:text-7xl text-4xl  text-[#000d3d] dark:text-white">Gayatri Takawale</p>
             <div className="py-4  text-black dark:text-white">
@@ -36,7 +36,7 @@ export default function HomePage() {
                 >
                       <a href="https://flowcv.com/resume/p14b98h20r" 
                         target="_blank"
-                        className="flex items-center gap-2 mt-1 p-4 max-md:text-sm  bg-[#3C83F5] hover:shadow-lg hover:shadow-[#3C83F5]/50 text-white text-lg rounded-xl"
+                        className="flex items-center gap-2 mt-1 p-4 max-sm:py-2 max-md:text-sm  bg-[#3C83F5] hover:shadow-lg hover:shadow-[#3C83F5]/50 text-white text-lg rounded-xl"
                         >
                             Download Resume <Download size={20}/>
                         </a>
